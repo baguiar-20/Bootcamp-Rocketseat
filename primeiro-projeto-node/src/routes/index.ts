@@ -7,9 +7,7 @@ const routes = Router();
 // routes.use("/appointments", appointmentsRouter);
 
 
-routes.post("/appointments", (request, response) =>{
-    return response.json({message: 'a'});
-});
+routes.use("/appointments", appointmentsRouter);
 
 
 export default routes;
